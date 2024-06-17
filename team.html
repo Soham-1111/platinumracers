@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platinum Racers - Team</title>
+    <link rel="icon" type="image/x-icon" href="The Platinum Racers Logo Updated.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Black+Mango&display=swap" rel="stylesheet">
+    <style>
+        /* Add your existing CSS here */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal-content {
+            background-color: #f78e4d;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .modal img {
+            max-width: 100%;
+            height: 50%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a><img src="Platinum Racers Website Logo.png" class="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="activity.html">Activity</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="team">
+            <div class="container">
+                <center>
+                <h2>Meet Our Team</h2>
+            </center>
+                <div class="team-grid">
+                    <div class="team-member" onclick="openModal('modal1')">
+                        <div class="team-member-inner">
+                            <img src="IMG_0836 (1).jpg" alt="Viraj Widge">
+                            <div class="team-info">
+                                <h3>Viraj Widge</h3>
+                                <p>Team Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-member" onclick="openModal('modal2')">
+                        <div class="team-member-inner">
+                            <img src="PHOTO-2024-06-12-15-40-51(1).jpg" alt="Avi Aidasani">
+                            <div class="team-info">
+                                <h3>Avi Aidasani</h3>
+                                <p>Design Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-member" onclick="openModal('modal3')">
+                        <div class="team-member-inner">
+                            <img src="IMG_7447 (1).jpg" alt="Reza Khan">
+                            <div class="team-info">
+                                <h3>Reza Khan</h3>
+                                <p>Manufacturing Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-member" onclick="openModal('modal4')">
+                        <div class="team-member-inner">
+                            <img src="IMG_0838(2).jpg" alt="Soham Mehta">
+                            <div class="team-info">
+                                <h3>Soham Mehta</h3>
+                                <p>Graphic Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-member" onclick="openModal('modal5')">
+                        <div class="team-member-inner">
+                            <img src="IMG_7445 (1).jpg" alt="Aarav Dayal">
+                            <div class="team-info">
+                                <h3>Aarav Dayal</h3>
+                                <p>Finance Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://www.tiktok.com/@platinum.racers3?_t=8fp8rddNjoW&_r=1"><img src="tik-tok.png" alt="Tiktok"></a>
+                <a href="https://youtube.com/@PlatinumRacers?si=aLB6WvWD1vrxlOT4"><img src="youtube.png" alt="Youtube"></a>
+                <a href="https://www.instagram.com/platinumracers_f1?igsh=ejNqcHJrM2tyM3Fy&utm_source=qr"><img src="instagram.png" alt="Instagram"></a>
+            </div>
+            <center>
+                <img class="f1logo" src="f1.png">
+            </center>
+            <p>&copy; 2024 Platinum Racers</p>
+        </div>
+    </footer>
+
+    <!-- Modals for each team member -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <img src="IMG_0836 (1).jpg" alt="Viraj Widge">
+            <h3>Viraj Widge</h3>
+            <p>Team Manager</p>
+            <p>Viraj is the team manager of Platinum Racers and possesses a lot of different skills contributing to the team in a positive manner. Viraj’s roles are to make sure that every aspect of the project is well-coordinated and on track to success. This means that he is responsible for managing timelines, delegating tasks, and fostering a collaborative environment.</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <img src="PHOTO-2024-06-12-15-40-51(1).jpg" alt="Avi Aidasani">
+            <h3>Avi Aidasani</h3>
+            <p>Design Engineer</p>
+            <p>Avi serves as both a Team Manager and a Design Engineer. Avi’s role is to make the car generally and showcasing groundbreaking technologies and pushing the boundaries of innovation. This means that he is responsible for making the design for the car while making sure that we are on track to success. </p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <img src="IMG_7447 (1).jpg" alt="Reza Khan">
+            <h3>Reza Khan</h3>
+            <p>Manufacturing Engineer</p>
+            <p>Meet Reza, our design engineer. Reza's role is to design developments of the car alongside with Avi. This includes conceptual designs and CAD models. He possesses many different skills that contribute to Platinum Racers in a positive manner making him a valuable asset to the team!</p>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <img src="IMG_0838(2).jpg" alt="Soham Mehta">
+            <h3>Soham Mehta</h3>
+            <p>Graphic Designer</p>
+            <p>As our Graphic Designer, Soham’s role is to make compelling graphics and designs, enhancing Platinum Racers. This means that he is responsible for creating our portfolios, presentations and promotional materials not only professionally but also visually stunning and eye-catching.</p>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <img src="IMG_7445 (1).jpg" alt="Aarav Dayal">
+            <h3>Aarav Dayal</h3>
+            <p>Finance Manager</p>
+            <p>Aarav is our Finance Manager. His role is to oversee our finance and make sure our money is being catered correctly. In addition to that, Aarav is responsible for finding sponsorship opportunities and proposing to corporate companies.</p>
+        </div>
+    </div>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            const modals = document.getElementsByClassName('modal');
+            for (let i = 0; i < modals.length; i++) {
+                if (event.target == modals[i]) {
+                    modals[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
+

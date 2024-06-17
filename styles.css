@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Black+Mango&display=swap');
+
+body {
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;   
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #112161;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Bangers', cursive;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f78e4d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#home-banner {
+    background-image: url('IMG_0848.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#home-banner .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+#home-banner h2 {
+    font-family: 'Bangers', cursive;
+    font-size: 48px;
+    margin: 0;
+    
+
+
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.team-member {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.team-member-inner {
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.team-info h3 {
+    font-family: 'Bangers', cursive;
+    color: #112161;
+    margin: 0;
+}
+
+.team-info p {
+    color: #666;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-member:hover img {
+    transform: scale(1.1);
+}
+
+.social-icons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-icons img {
+    width: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+.social-icons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-icons img {
+    width: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    background-color: #112161;
+    color: #f78e4d;
+    padding: 20px 0;
+    text-align: center;
+    width:100%;
+    bottom:0;
+    line-height: 5px;
+    position:fixed; 
+    text-align:center;
+
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #f78e4d;
+    color: #112161;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+form button:hover {
+    background-color: #f78e4d;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.overlay{
+    color: #f78e4d;
+}
+
+.logo{
+    width: 300px;
+    padding-left:20px;
+   
+}
+.copyright{
+    margin-right: 50px;
+}
+
+.f1logo{
+    width:500px;
+    height:50px;
+}
+
+#faq {
+    padding: 20px;
+}
+
+#faq .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#faq h2 {
+    font-family: 'Bangers', cursive;
+    font-size: 36px;
+    color: #112161;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-question {
+    font-size: 18px;
+    color: #112161;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Tenor Sans", sans-serif;
+}
+
+.faq-question:focus {
+    outline: none;
+}
+
+.faq-answer {
+    display: none;
+    padding: 0 15px 15px;
+    font-size: 16px;
+    color: #f78e4d;
+    font-family: "Tenor Sans", sans-serif;
+}
+
+.plus-icon {
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.faq-question.open .plus-icon {
+    transform: rotate(45deg);
+}
+
+
+
+
